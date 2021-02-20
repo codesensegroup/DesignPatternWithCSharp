@@ -17,3 +17,4 @@ Design pattern tutorial dummy project. It can help beginners how can use the pat
  - [Adapter](https://github.com/codesensegroup/DesignPatternWithCSharp/tree/main/Adapter).
  - [Proxy](https://github.com/codesensegroup/DesignPatternWithCSharp/tree/main/Proxy).
  - [Facde](https://github.com/codesensegroup/DesignPatternWithCSharp/tree/main/Facade).
+ - [Observer](https://github.com/codesensegroup/DesignPatternWithCSharp/tree/main/Observer).
