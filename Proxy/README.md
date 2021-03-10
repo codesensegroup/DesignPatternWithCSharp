@@ -25,7 +25,7 @@
 
 ### UML圖例
 
-> ![image-20210310102730931](C:\Users\popo\AppData\Roaming\Typora\typora-user-images\image-20210310102730931.png)
+> ![image-20210310102730931](image-20210310102730931.png)
 >
 > - Client 代表客戶端。
 > - Subject是抽象主題。
