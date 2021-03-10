@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Proxy.AOP_DispatchProxy;
 using System;
 
 namespace UnitTests
@@ -61,6 +62,60 @@ namespace UnitTests
             Console.WriteLine("---- 使用代理(AOP) ProxyFightManager ----");
             Proxy.AOP.IFightManager proxyFightManager = new Proxy.AOP.ProxyFightManager(realFightManager);
             proxyFightManager.DoFight("POPO");
+        }
+
+        [TestMethod]
+        public void TestAOP_RealProxy_NoLogging()
+        {
+            Console.WriteLine("***\r\n Begin program - no logging\r\n");
+
+            IRepository<Customer> customerRepository = new Repository<Customer>();
+            var customer = new Customer
+            {
+                Id = 1,
+                Name = "Customer 1",
+                Address = "Address 1"
+            };
+            customerRepository.Add(customer);
+            customerRepository.Update(customer);
+            customerRepository.Delete(customer);
+            Console.WriteLine("\r\nEnd program - no logging\r\n***");
+        }
+
+        [TestMethod]
+        public void TestAOP_RealProxy_Logging_With_Decorator()
+        {
+            Console.WriteLine("***\r\n Begin program - logging with decorator\r\n");
+
+            IRepository<Customer> customerRepository = new LoggerRepository<Customer>(new Repository<Customer>());
+            var customer = new Customer
+            {
+                Id = 1,
+                Name = "Customer 1",
+                Address = "Address 1"
+            };
+            customerRepository.Add(customer);
+            customerRepository.Update(customer);
+            customerRepository.Delete(customer);
+            Console.WriteLine("\r\nEnd program - logging with decorator\r\n***");
+        }
+
+        [TestMethod]
+        public void TestAOP_RealProxy_Logging_With_DynamicProxy()
+        {
+            Console.WriteLine("***\r\n Begin program - logging with dynamic proxy\r\n");
+
+            IRepository<Customer> customerRepository = RepositoryFactory.Create<Customer>();
+            var customer = new Customer
+            {
+                Id = 1,
+                Name = "Customer 1",
+                Address = "Address 1"
+            };
+            customerRepository.Add(customer);
+            customerRepository.Update(customer);
+            customerRepository.Delete(customer);
+            Console.WriteLine("\r\nEnd program - logging with dynamic proxy\r\n***");
         }
     }
 }

@@ -51,7 +51,7 @@
 >
 > 以下則是常見實踐
 >
-> ## **虛擬代理(Virtual Proxy) **
+> ## **虛擬代理(Virtual Proxy)**
 >
 > 用比較不消耗資源的代理物件來代替實際物件，實際物件只有在真正需要才會被創造。
 > 可以作為⌈延後載入⌋功能的實作，讓資源可以在真正要使用時，才進行載入動作，在其他情況下都只是虛擬代理(Virtual Proxy)所呈現的一個⌈假象⌋。
@@ -113,8 +113,12 @@
 > [[如何提升系統品質-Day27\]設計 - Aspect-oriented programming(AOP) - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天 (ithome.com.tw)](https://ithelp.ithome.com.tw/articles/10081459)
 >
 > [[.NET\][Architecture][Design Patterns] 切面導向設計 (Aspect-Oriented Programming, AOP) 的平台實作 (1) - 概念 | 小朱® 的技術隨手寫 - 點部落 (dotblogs.com.tw)](https://dotblogs.com.tw/regionbbs/2014/05/16/aspect_oriented_programming_part_1_concepts)
-> 
-> 
+>
+> [面向方面的程式設計-面向方面的程式設計與 RealProxy 類 | Microsoft Docs](https://docs.microsoft.com/zh-tw/archive/msdn-magazine/2014/february/aspect-oriented-programming-aspect-oriented-programming-with-the-realproxy-class)
+>
+> ## .NET CORE 需使用 DispatchProxy 來產生動態 Proxy
+>
+> [c# - RealProxy in dotnet core? - Stack Overflow](https://stackoverflow.com/questions/38467753/realproxy-in-dotnet-core/48150664)
 
 [莫力全 Kyle Mo]: https://oldmo860617.medium.com/proxy-pattern-5f89595dcd30
 [Code Paradise]: http://glj8989332.blogspot.com/2018/04/design-pattern-proxy-pattern.html
