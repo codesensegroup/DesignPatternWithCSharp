@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proxy", "Proxy\Proxy.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factory", "Factory\Factory.csproj", "{BA7BAE9C-7D19-4F74-9520-072D8E27C7E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{FDFD3F57-ADDF-4288-82FB-72B8F35E46FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Observer", "Observer\Observer.csproj", "{FDFD3F57-ADDF-4288-82FB-72B8F35E46FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{F44F99E8-DF23-4202-B445-4437443092EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{FDFD3F57-ADDF-4288-82FB-72B8F35E46FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDFD3F57-ADDF-4288-82FB-72B8F35E46FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDFD3F57-ADDF-4288-82FB-72B8F35E46FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F44F99E8-DF23-4202-B445-4437443092EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F44F99E8-DF23-4202-B445-4437443092EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F44F99E8-DF23-4202-B445-4437443092EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F44F99E8-DF23-4202-B445-4437443092EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
