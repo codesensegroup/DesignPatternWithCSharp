@@ -9,7 +9,9 @@ namespace Proxy
             IOrderServer orderService = new OrderServerProxy();
             orderService.TakeOrder("Cell Phone");
             orderService.ProcessPayment(orderService.DeliverOrder());
-          
+
+        
+
         }
     }
 }
